@@ -55,7 +55,6 @@ h1, h2, h3, h1 span, h2 span, h3 span, .nav-item {
   @include media-breakpoint-up(lg) {
     padding-top: $content-padding-top;
     padding-bottom: $content-padding-bottom;
-    margin-top: $header-height;
   }
   min-height: calc(100vh - #{$header-height + $content-padding-top + $content-padding-bottom + $footer-height}); // sticky footer
 }
@@ -65,12 +64,6 @@ h1, h2, h3, h1 span, h2 span, h3 span, .nav-item {
 
 /////////////////// Register/Sign in header
 header.global-header {
-  @include media-breakpoint-up(lg) {
-    position: fixed;
-    top: 0;
-    z-index: 200; // necessary to keep the header on top of other elements
-    overflow: visible;  // fix for Safari
-  }
   //background-color: #4c61bf;
   box-shadow: none;
 }
