@@ -163,6 +163,12 @@ RUN npm install @edly-io/indigo-frontend-component-footer@^2.0.0
 COPY indigo/env.config.jsx /openedx/app/
 """,
         ),
+        (
+            "mfe-dockerfile-post-npm-install-course-authoring",
+            """
+RUN npm install '@edx/brand@git+https://github.com/TitanEd/vic-brand.git#staging'
+""",
+        ),
     ]
 )
 
