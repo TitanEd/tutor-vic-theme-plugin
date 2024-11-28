@@ -166,7 +166,7 @@ COPY indigo/env.config.jsx /openedx/app/
         (
             "mfe-dockerfile-post-npm-install-course-authoring",
             """
-RUN npm install '@edx/brand@git+https://github.com/TitanEd/vic-brand.git#staging'
+RUN npm install '@edx/brand@git+https://github.com/TitanEd/vic-brand.git#master'
 """,
         ),
     ]
